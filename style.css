@@ -1,0 +1,362 @@
+/* -------------------------
+   Global Styles
+------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f8fa;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth; /* smooth scroll effect */
+}
+
+/* -------------------------
+   Navbar
+------------------------- */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: #232841;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #ffda79;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* -------------------------
+   Hero Section
+------------------------- */
+.hero {
+  text-align: center;
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, #6c63ff, #232841);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero span {
+  color: #ffda79; /* Highlighted name */
+}
+
+.typing {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  min-height: 24px;
+}
+
+.hero-buttons {
+  margin-top: 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.hire-btn {
+  background: #ffda79;
+  color: #232841;
+}
+.hire-btn:hover {
+  background: #fff;
+  color: #6c63ff;
+}
+
+.resume-btn {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.resume-btn:hover {
+  background: #fff;
+  color: #232841;
+}
+
+/* -------------------------
+   Section Base Style
+------------------------- */
+section {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 3rem 1.5rem;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  color: #232841;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* -------------------------
+   About Section
+------------------------- */
+.about p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* -------------------------
+   Skills Section
+------------------------- */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill {
+  background: #ededed;
+  padding: 0.7rem 1.3rem;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.skill:hover {
+  background: #6c63ff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* -------------------------
+   Projects Section
+------------------------- */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: #f2f9ff;
+  min-width: 250px;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(98,125,255,0.15);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(98,125,255,0.3);
+}
+
+.project-card h3 {
+  color: #232841;
+  margin-bottom: 0.5rem;
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.btn.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  border: 1.5px solid #627dff;
+  color: #627dff;
+  background: transparent;
+}
+.btn.small:hover {
+  background: #627dff;
+  color: #fff;
+}
+/*more projects*/
+.more-projects {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.more-projects h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.more-projects p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.github-btn {
+  background: #24292f;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.github-btn:hover {
+  background: #0366d6;
+}
+
+
+/* Social icons */
+.socials {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.socials a {
+  color: #627dff;
+  margin: 0 0.6rem;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+.socials a:hover {
+  color: #232841;
+}
+
+/*Contact Section */
+
+.contact {
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  background: #f9f9ff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  width: fit-content;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-info p:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(98,125,255,0.25);
+}
+
+.contact-info i {
+  color: #627dff;
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+}
+
+
+/* -------------------------
+   Footer
+------------------------- */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #232841;
+  color: #fff;
+  margin-top: 2rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* -------------------------
+   Responsive Design
+------------------------- */
+@media (max-width: 780px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background: #232841;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem 0;
+  }
+  .nav-links li {
+    margin: 0.7rem 0;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+/* Scroll-to-Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #627dff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: none;
+  transition: background 0.3s;
+  z-index: 999;
+}
+.scroll-top:hover {
+  background: #232841;
+}
